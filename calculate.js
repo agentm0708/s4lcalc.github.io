@@ -333,6 +333,7 @@ var formatter = new Intl.NumberFormat("en-US", {
     a152 = 0;
     l152 = 0;
 
+    debugger;
   
     // Level 1
     b71 = parseFloat(document.getElementById("1_b71").value) || 0;
@@ -358,7 +359,7 @@ var formatter = new Intl.NumberFormat("en-US", {
     document.getElementById("d80").innerText = d80;
   
     //
-    f83 = d79 * f78  * data.find((row) => row[1] === l79)?.[5];
+    f83 = f79 *d79 * f78  * data.find((row) => row[1] === l79)?.[5];
     document
       .querySelectorAll(".f83")
       .forEach((div) => (div.textContent = "$ " + formatter.format(f83)));
@@ -377,7 +378,7 @@ var formatter = new Intl.NumberFormat("en-US", {
     d88 = parseFloat(document.getElementById("d88").value) || 0;
     f88 = parseFloat(document.getElementById("f88").value) || 0;
   
-    d89 = f87 * d88;
+    d89 =  f87 * d88;
     document.getElementById("d89").innerText = d89;
   
     f92 = f88 * d88 * f87 * data.find((row) => row[1] === l88)?.[6];
@@ -422,7 +423,7 @@ var formatter = new Intl.NumberFormat("en-US", {
     d148 = f146 * d147;
     document.getElementById("d148").innerText = d148;
   
-    f151 = f147 * d88 * data.find((row) => row[1] === l147)?.[7];
+    f151 = f147 * d88 * f146 * data.find((row) => row[1] === l147)?.[7];
   
     document
       .querySelectorAll(".f151")
