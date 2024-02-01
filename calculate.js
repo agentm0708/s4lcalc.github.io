@@ -333,7 +333,6 @@ var formatter = new Intl.NumberFormat("en-US", {
     a152 = 0;
     l152 = 0;
 
-    debugger;
   
     // Level 1
     b71 = parseFloat(document.getElementById("1_b71").value) || 0;
@@ -415,21 +414,22 @@ var formatter = new Intl.NumberFormat("en-US", {
   
     //
     // Level 5
+    debugger;
   
     f146 = parseFloat(document.getElementById("5_f146").value) || 0;
     d147 = parseFloat(document.getElementById("d147").value) || 0;
     f147 = parseFloat(document.getElementById("f147").value) || 0;
   
-    d148 = f146 * d147;
+    d148 = f146 * f147;
     document.getElementById("d148").innerText = d148;
   
-    f151 = f147 * d88 * f146 * data.find((row) => row[1] === l147)?.[7];
+    f151 = f147 * d147 * f146 * data.find((row) => row[1] === l147)?.[7];
   
     document
       .querySelectorAll(".f151")
       .forEach((div) => (div.textContent = "$ " + formatter.format(f151)));
   
-    a152 = a93 + d147 * f146;
+    a152 = a102 + d148;
     document.getElementById("a152").innerText = a152;
   
     l152 = l102 + d147 * f147 * f146;
